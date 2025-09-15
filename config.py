@@ -4,8 +4,9 @@ from typing import Optional
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL: str = "postgresql://postgres:Vipul123@localhost/payment_gatewaydemo"
-    
+    # DATABASE_URL: str = "postgresql://postgres:Vipul123@localhost/payment_gatewaydemo"
+    DATABASE_URL: str = "postgresql+psycopg2://avpayuser:Avsol%401990@localhost:5432/avpay"  #docker test
+
     # JWT
     #>>> from cryptography.fernet import Fernet  --> ENCRYPTION_KEY
     #>>> print(Fernet.generate_key().decode())
